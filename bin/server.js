@@ -8,5 +8,5 @@ const UPLOAD_DIR = process.env.UPLOAD_DIR;
 
 // Starts the SERVER
 app.listen(PORT, async () => {
-  await createFolderIsNotExist(UPLOAD_DIR);
+    await createFolderIsNotExist(UPLOAD_DIR);
 });
