@@ -6,6 +6,7 @@ const helmet = require('helmet');
 const limiter = require('./helpers/limiter');
 const { HttpCode } = require('./helpers/constants');
 const puppeterRouter = require('./routes/api/puppeter');
+const avatarRouter = require('./routes/api/avatar');
 const app = express();
 
 const formatsLogger = app.get('env') === 'development' ? 'dev' : 'short';
@@ -21,6 +22,7 @@ app.use(cors());
 app.use(express.json({ limit: 15000 })); // limit: 15000 - Ограничение передачи байт
 app.use(boolParser()); // Converts a string to a Boolean
 app.use('/api/puppeter', puppeterRouter);
+app.use('/api/avatar', avatarRouter);
 
 app.use((req, res) => {
     res

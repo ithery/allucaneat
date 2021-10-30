@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@sendgrid/mail": "^7.4.4",
+    "avatar-initials": "^5.0.0",
+    "axios": "^0.24.0",
     "bcryptjs": "^2.4.3",
     "cloudinary": "^1.25.2",
     "cors": "2.8.5",
@@ -19,6 +21,7 @@
     "express": "4.17.1",
     "express-query-boolean": "^2.0.0",
     "express-rate-limit": "^5.2.6",
+    "gradient-avatar": "^1.0.2",
     "gravatar": "^1.8.1",
     "helmet": "^4.6.0",
     "jimp": "^0.16.1",
