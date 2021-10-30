@@ -11,7 +11,7 @@ const capture = async (req, res, next) => {
         let errCode=0;
         let errMessage='';
         let data = {};
-        let {url,width,height,fullPage} = req.query;
+        let {url, width, height, fullPage} = req.query;
         if(!url) {
             errCode++;
             errMessage='url required';
@@ -28,7 +28,7 @@ const capture = async (req, res, next) => {
             }
             await page.goto(url);
             const title = (await page.title()).replace(/[/\\?%*:|"<>]/g, '-');
-            const base64 = await page.screenshot({ encoding: "base64", fullPage:fullPage });
+            const base64 = await page.screenshot({ encoding: "base64", fullPage: fullPage });
             data = {
                 title,
                 base64
