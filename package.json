@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "cross-env NODE_ENV=production node ./bin/server.js",
-    "start:dev": "cross-env NODE_ENV=development nodemon ./bin/server.js",
+    "dev": "cross-env NODE_ENV=development nodemon ./bin/server.js",
     "lint": "eslint \"**/*.js\"",
     "lint:fix": "eslint --fix \"**/*.js\"",
     "test": "cross-env NODE_ENV=test jest --no-cache --verbose"
@@ -14,6 +14,7 @@
     "avatar-initials": "^5.0.0",
     "axios": "^0.24.0",
     "bcryptjs": "^2.4.3",
+    "cheerio": "^1.0.0-rc.10",
     "cloudinary": "^1.25.2",
     "cors": "2.8.5",
     "cross-env": "7.0.3",

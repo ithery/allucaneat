@@ -13,9 +13,3 @@ const limiter = rateLimit({
 });
 
 module.exports = limiter;
-
-/**
- * limiter
- * Ограничивает кол-во запросов на сервер
- * Вызывается в app.js
- */
